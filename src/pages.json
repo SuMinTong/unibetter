@@ -1,0 +1,68 @@
+{
+  "pages": [
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+
+    {
+      "path": "pages/tabBar/index",
+      "style": {
+        "navigationBarTitleText": "index"
+      }
+    },
+    {
+      "path": "pages/tabBar/records",
+      "style": {
+        "navigationBarTitleText": "records"
+      }
+    },
+    {
+      "path": "pages/tabBar/user",
+      "style": {
+        "navigationBarTitleText": "user"
+      }
+    },
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "uni-app"
+      }
+    }
+  ],
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#A74BFD",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/tabBar/index",
+        "iconPath": "static/tabbar/home.png",
+        "selectedIconPath": "static/tabbar/home_s.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/tabBar/records",
+        "iconPath": "static/tabbar/news.png",
+        "selectedIconPath": "static/tabbar/news_s.png",
+        "text": "记录"
+      },
+      {
+        "pagePath": "pages/tabBar/user",
+        "iconPath": "static/tabbar/user.png",
+        "selectedIconPath": "static/tabbar/user_s.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^uv-(.*)": "@climblee/uv-ui/components/uv-$1/uv-$1.vue"
+    }
+  }
+}
